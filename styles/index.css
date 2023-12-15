@@ -1,0 +1,43 @@
+p{
+    color: blue;
+    font-size: 20px;
+}
+
+.main{
+    background-color: rosybrown;
+    display: flex; /*main axis by default is X*/
+    flex-direction: column; /*change the main axis to Y (vertical)*/
+    justify-content: space-evenly; /*align content in the main axis*/
+    align-items: center; /*position regarding the axis is not defined as main*/
+    gap: 1.5em; /*space between items*/
+}
+
+.sections{
+    background-color: grey;
+    width: 95%; /*occupy almost all width of the screen*/
+    margin: 0.5em;
+    border: 2px solid black;
+}
+
+/*
+#first_div{
+    border: 2px solid black;
+}
+*/
+/* 
+---------------------COMMENTS SECTIONS----------------------
+Using IDs instead of classes for the section tag
+#section_1{
+    background-color: greenyellow;
+}
+
+#section_2{
+    background-color: orangered;
+}
+#section_3{
+    background-color: lightskyblue;
+}
+#section_4{
+    background-color: orange;
+}
+*/
