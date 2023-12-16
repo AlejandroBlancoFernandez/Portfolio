@@ -3,15 +3,19 @@ p{
     font-size: 20px;
 }
 
+/*-------------BODY-------------*/
 .main{
     background-color: rosybrown;
     display: flex; /*main axis by default is X*/
     flex-direction: column; /*change the main axis to Y (vertical)*/
     justify-content: space-evenly; /*align content in the main axis*/
     align-items: center; /*position regarding the axis is not defined as main*/
-    gap: 1.5em; /*space between items*/
+    gap: 1.5em; /*space between sections*/
+    height: 100%;
+    scroll-behavior: smooth; /*used for the buttons*/
 }
 
+/*-------------SECTIONS-------------*/
 .sections{
     background-color: grey;
     width: 95%; /*occupy almost all width of the screen*/
@@ -19,25 +23,39 @@ p{
     border: 2px solid black;
 }
 
+/*-------------section 1-------------*/
+#section1{
+    height: 95vh; 
+    display: flex; 
+    flex-direction: column; /* displays vertically in flexbox the phrase, image and buttons*/
+}
+
+#phrase-and-photo{
+    flex-grow: 4; /* It grows faster than the buttons div. It makes the phrase and sentece occupy the most and the buttons at the bottom of the section*/
+    display: flex; /*X axis is main*/
+    justify-content: space-evenly;
+    align-items: center;
+    border: 2px solid orangered;
+}
+
+#phrase-and-photo p{
+    border: 2px solid black;
+}
+
+#phrase-and-photo img{
+    border: 2px solid black;
+}
+
+#button-frame{
+    flex-grow: 1;
+    display: flex; /* flexbox inside the button div*/
+    justify-content: space-evenly; /* evenly spaced buttons*/
+    align-items: center; /*centered in the Y axis*/
+    border: 2px solid yellowgreen;
+}
+
 /*
 #first_div{
     border: 2px solid black;
-}
-*/
-/* 
----------------------COMMENTS SECTIONS----------------------
-Using IDs instead of classes for the section tag
-#section_1{
-    background-color: greenyellow;
-}
-
-#section_2{
-    background-color: orangered;
-}
-#section_3{
-    background-color: lightskyblue;
-}
-#section_4{
-    background-color: orange;
 }
 */
