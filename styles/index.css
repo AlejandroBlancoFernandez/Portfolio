@@ -19,11 +19,19 @@ p{
 .sections{
     background-color: grey;
     width: 95%; /*occupy almost all width of the screen*/
-    margin: 0.5em;
+    margin-bottom: 1em;
     border: 2px solid black;
 }
 
+/*-------------TITLES-------------*/
+.title{
+    width:100%;
+    margin-bottom: 0.5em;
+    border: 2px solid white;
+}
+
 /*-------------section 1-------------*/
+
 #section1{
     height: 95vh; 
     display: flex; 
@@ -31,7 +39,7 @@ p{
 }
 
 #phrase-and-photo{
-    flex-grow: 4; /* It grows faster than the buttons div. It makes the phrase and sentece occupy the most and the buttons at the bottom of the section*/
+    flex: 4; /* It grows faster than the buttons div. It makes the phrase and sentece occupy the most and the buttons at the bottom of the section*/
     display: flex; /*X axis is main*/
     justify-content: space-evenly;
     align-items: center;
@@ -47,15 +55,36 @@ p{
 }
 
 #button-frame{
-    flex-grow: 1;
+    flex: 1;
     display: flex; /* flexbox inside the button div*/
     justify-content: space-evenly; /* evenly spaced buttons*/
     align-items: center; /*centered in the Y axis*/
     border: 2px solid yellowgreen;
 }
 
-/*
-#first_div{
-    border: 2px solid black;
+/*-------------section 2 (about me)-------------*/
+
+#aboutme{
+    height: 50vh;
+    display: flex; /*X is main axis for both divs in this section*/
+    
 }
-*/
+
+#description{
+    border: 2px solid orangered;
+    flex: 4; /*grows faster than contact icons*/
+    height: 100%;
+    box-sizing: border-box;/* div fitting within the section height*/
+    padding: 0.75em;
+}
+
+#contact{
+    border: 2px solid yellowgreen;
+    flex-grow: 1;
+    box-sizing: border-box;
+    /* for icons to be centered on the right*/
+    display: flex; /*flexbox*/
+    flex-direction: column; /*Y as main axis*/
+    justify-content: space-evenly; /*same space in between icons*/
+    align-items: center; /*centered in the X axis*/
+}
