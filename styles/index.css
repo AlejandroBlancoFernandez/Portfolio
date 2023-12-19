@@ -88,3 +88,27 @@ p{
     justify-content: space-evenly; /*same space in between icons*/
     align-items: center; /*centered in the X axis*/
 }
+
+/*-------------section 3 (working experience)-------------*/
+
+#experience{
+    height: 70vh;
+    display: flex; 
+    flex-direction: column; /* Y is the main axis*/
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+#h2o2{
+    border: 2px solid yellowgreen;
+    flex-grow: 1;
+    box-sizing: border-box;
+    width: 80%;
+}
+
+#accenture{
+    border: 2px solid purple;
+    flex-grow: 1;
+    box-sizing: border-box;
+    width: 80%;
+}
