@@ -112,3 +112,46 @@ p{
     box-sizing: border-box;
     width: 80%;
 }
+
+/*-------------section 4 (projects)-------------*/
+
+#projects{
+    height: 80vh;
+    display:flex;
+    flex-direction: column;
+    
+    align-items: center;
+}
+.accordion{
+    border: 2px solid lightblue;
+    width: 100%;
+    margin-top: 1em;
+}
+
+.accordion-button, .project-button{
+    padding: 0.5em; /* basic styling*/
+    width: 100%;
+    text-align: left;
+    border: 2px solid black;
+    cursor: pointer;
+}
+
+.accordion-button{
+    background-color: #5f8f78;
+    margin-bottom: 0.5em;
+}
+
+.project-button{
+    background-color: #d8f9ea;
+}
+
+.accordion-sub-item, .accordion-content{
+    max-height: 0; /*maximum height of div content to 0, so it will overflow effectively and...*/
+    overflow: hidden; /*it will be hidden*/
+    transition: max-height 0.3s ease; /*smooth transition used when toggling*/
+
+}
+
+.accordion-button:hover, .project-button:hover {
+    background-color: #ddd;
+}
