@@ -1,11 +1,7 @@
-p{
-    color: blue;
-    font-size: 20px;
-}
 
 /*-------------BODY-------------*/
 .main{
-    background-color: rosybrown;
+   
     display: flex; /*main axis by default is X*/
     flex-direction: column; /*change the main axis to Y (vertical)*/
     justify-content: space-evenly; /*align content in the main axis*/
@@ -15,24 +11,30 @@ p{
     scroll-behavior: smooth; /*used for the buttons*/
 }
 
+.bckg{
+    background-color: #282D34 ;
+}
 /*-------------SECTIONS-------------*/
 .sections{
-    background-color: grey;
     width: 95%; /*occupy almost all width of the screen*/
     margin-bottom: 1em;
     border: 2px solid black;
+    font-family: 'Gill Sans MT', sans-serif;
 }
 
 /*-------------TITLES-------------*/
 .title{
     width:100%;
     margin-bottom: 0.5em;
-    border: 2px solid white;
+    border: 2px solid #F7F9F9;
+    color: #FBFCFC ;
+    font-family: 'Georgia', 'Gill Sans MT', sans-serif;
 }
 
 /*-------------section 1-------------*/
 
 #section1{
+    background-color: #282D34 ;
     height: 95vh; 
     display: flex; 
     flex-direction: column; /* displays vertically in flexbox the phrase, image and buttons*/
@@ -44,6 +46,10 @@ p{
     justify-content: space-evenly;
     align-items: center;
     border: 2px solid orangered;
+}
+
+#phrase-and-photo p{
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
 #phrase-and-photo p{
@@ -62,9 +68,26 @@ p{
     border: 2px solid yellowgreen;
 }
 
+.btn{
+    /*background-image: linear-gradient(92.88deg, #455EB5 9.16%, #5643CC 43.89%, #673FD7 64.72%);*/ /*creating the gradient*/
+    /*background-image: linear-gradient(92.88deg, #4ba4a6 0%, #408d8e 25%, #347576 50%, #285d5e 75%, #1d4646 100%);*/
+    background-image: linear-gradient(92.88deg, #285d5e 0%, #347576 33%, #285d5e 66%);
+
+    cursor:pointer;
+    padding: 0.5em;
+    border-radius: 0.75vw; /*make corners rounded*/
+
+}
+
+.btn:hover{
+    box-shadow: rgba(80, 63, 205, 0.5) 0 1px 30px; /*outside of the box effect when hovering*/
+    transition-duration: .1s;
+}
+
 /*-------------section 2 (about me)-------------*/
 
 #aboutme{
+    background-color: #282D34 ;
     height: 50vh;
     display: flex; /*X is main axis for both divs in this section*/
     
@@ -92,6 +115,7 @@ p{
 /*-------------section 3 (working experience)-------------*/
 
 #experience{
+    background-color: grey;
     height: 70vh;
     display: flex; 
     flex-direction: column; /* Y is the main axis*/
@@ -116,6 +140,7 @@ p{
 /*-------------section 4 (projects)-------------*/
 
 #projects{
+    background-color: grey;
     height: 80vh;
     display:flex;
     flex-direction: column;
