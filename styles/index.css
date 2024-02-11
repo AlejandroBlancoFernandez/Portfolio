@@ -12,13 +12,15 @@
 }
 
 .bckg{
-    background-color: #282D34 ;
+    background-color: #282D34;
+    /*#2b3a42*/
+    /*#282D34*/
 }
 /*-------------SECTIONS-------------*/
 .sections{
     width: 95%; /*occupy almost all width of the screen*/
     margin-bottom: 1em;
-    border: 2px solid black;
+    /*border: 2px solid black;*/
     font-family: 'Gill Sans MT', sans-serif;
 }
 
@@ -28,10 +30,10 @@
     margin-bottom: 0.5em;
     border: 2px solid #F7F9F9;
     color: #FBFCFC ;
-    font-family: 'Georgia', 'Gill Sans MT', sans-serif;
+    font-family: 'Raleway','Georgia', 'Gill Sans MT', sans-serif;
 }
 
-/*-------------section 1-------------*/
+/*-------------section 1 (phrase and photo)-------------*/
 
 #section1{
     background-color: #282D34 ;
@@ -41,23 +43,41 @@
 }
 
 #phrase-and-photo{
-    flex: 4; /* It grows faster than the buttons div. It makes the phrase and sentece occupy the most and the buttons at the bottom of the section*/
+    flex: 3; /* It grows faster than the buttons div. It makes the phrase and sentece occupy the most and the buttons at the bottom of the section*/
     display: flex; /*X axis is main*/
     justify-content: space-evenly;
     align-items: center;
-    border: 2px solid orangered;
+    /*border: 2px solid orangered;*/
 }
 
-#phrase-and-photo p{
-    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+#initial-text{
+    margin: 1em;
+    text-align: center;
+}
+#hello{
+    font-family: 'Raleway';
+    color:#c4c4cf;
+    font-size: 2vw;
+}
+#name{
+    font-family: 'Inria Sans';
+    color:#c4cacf;
+    font-size: 3vw;
 }
 
-#phrase-and-photo p{
-    border: 2px solid black;
+#initial-text h1{
+    padding-bottom: 1em;
 }
 
-#phrase-and-photo img{
-    border: 2px solid black;
+#initial-text p{
+    font-family: 'Raleway';
+    font-size: 1.1em;
+}
+
+#photoMe{
+    margin: 0.5em;
+    clip-path: circle(45%);
+    opacity: 0.7;
 }
 
 #button-frame{
@@ -65,7 +85,7 @@
     display: flex; /* flexbox inside the button div*/
     justify-content: space-evenly; /* evenly spaced buttons*/
     align-items: center; /*centered in the Y axis*/
-    border: 2px solid yellowgreen;
+    /*border: 2px solid yellowgreen;*/
 }
 
 .btn{
