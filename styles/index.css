@@ -61,8 +61,8 @@
 }
 #name{
     font-family: 'Inria Sans';
-    color:#c4cacf;
-    font-size: 3vw;
+    color:#6495ED;;
+    font-size: 3.5vw;
 }
 
 #initial-text h1{
@@ -72,6 +72,7 @@
 #initial-text p{
     font-family: 'Raleway';
     font-size: 1.1em;
+    color:#c4c4cf;
 }
 
 #photoMe{
@@ -91,15 +92,19 @@
 .btn{
     /*background-image: linear-gradient(92.88deg, #455EB5 9.16%, #5643CC 43.89%, #673FD7 64.72%);*/ /*creating the gradient*/
     /*background-image: linear-gradient(92.88deg, #4ba4a6 0%, #408d8e 25%, #347576 50%, #285d5e 75%, #1d4646 100%);*/
-    background-image: linear-gradient(92.88deg, #285d5e 0%, #347576 33%, #285d5e 66%);
-
+    background-color: #5f8f78;
+    color:#c4cacf;
     cursor:pointer;
     padding: 0.5em;
-    border-radius: 0.75vw; /*make corners rounded*/
+    border-radius: 0.4vw; /*make corners rounded*/
+    font-size: 1.15em;
+    text-decoration: none;
 
 }
 
 .btn:hover{
+    background-color: #6495ED;
+    transform: scale(1.05); /*make it a little bit bigger*/
     box-shadow: rgba(80, 63, 205, 0.5) 0 1px 30px; /*outside of the box effect when hovering*/
     transition-duration: .1s;
 }
