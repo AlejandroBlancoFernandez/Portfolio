@@ -21,16 +21,19 @@
     width: 95%; /*occupy almost all width of the screen*/
     margin-bottom: 1em;
     /*border: 2px solid black;*/
-    font-family: 'Gill Sans MT', sans-serif;
+    /*font-family: 'Gill Sans MT', sans-serif;*/
 }
 
 /*-------------TITLES-------------*/
 .title{
     width:100%;
     margin-bottom: 0.5em;
-    border: 2px solid #F7F9F9;
-    color: #FBFCFC ;
-    font-family: 'Raleway','Georgia', 'Gill Sans MT', sans-serif;
+    margin-left: 1em;
+    padding-top: 0.5em;
+    /*border: 2px solid #F7F9F9;*/
+    color: #c4c4cf;
+    font-size: 2em;
+    font-family: 'Georgia', 'Gill Sans MT', sans-serif;
 }
 
 /*-------------section 1 (phrase and photo)-------------*/
@@ -70,7 +73,7 @@
 }
 
 #initial-text p{
-    font-family: 'Raleway';
+    /*font-family: 'Raleway';*/
     font-size: 1.1em;
     color:#c4c4cf;
 }
@@ -113,17 +116,29 @@
 
 #aboutme{
     background-color: #282D34 ;
-    height: 50vh;
+    height: 35vh;
     display: flex; /*X is main axis for both divs in this section*/
     
 }
 
 #description{
     border: 2px solid orangered;
+    text-align: justify;
     flex: 4; /*grows faster than contact icons*/
-    height: 100%;
+
     box-sizing: border-box;/* div fitting within the section height*/
     padding: 0.75em;
+    color:#c4cacf;
+    font-family: 'Inria Sans';
+}
+
+#description p{
+    padding-bottom: 1em;
+}
+
+.keywords{
+    color: #A9CCE3;
+    font-weight: bold;
 }
 
 #contact{
@@ -136,6 +151,8 @@
     justify-content: space-evenly; /*same space in between icons*/
     align-items: center; /*centered in the X axis*/
 }
+
+
 
 /*-------------section 3 (working experience)-------------*/
 
