@@ -115,8 +115,8 @@
 /*-------------section 2 (about me)-------------*/
 
 #aboutme{
-    background-color: #282D34 ;
-    height: 35vh;
+    background-color: #282D34;
+    height: auto;
     display: flex; /*X is main axis for both divs in this section*/
     
 }
@@ -157,28 +157,61 @@
 /*-------------section 3 (working experience)-------------*/
 
 #experience{
-    background-color: grey;
-    height: 70vh;
+    background-color: #282D34;
+    height: auto;
     display: flex; 
     flex-direction: column; /* Y is the main axis*/
     justify-content: space-evenly;
     align-items: center;
+    border: 2px solid red;
+    color:#c4cacf;
 }
 
 #h2o2{
-    border: 2px solid yellowgreen;
+    border-radius: 0.4vw; 
     flex-grow: 1;
     box-sizing: border-box;
     width: 80%;
+    font-family: 'Inria Sans';
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+#h2o2 img{
+    width: 10%;
+    height: auto;
+    filter: grayscale(70%)
 }
 
 #accenture{
-    border: 2px solid purple;
+    border-radius: 0.4vw; 
     flex-grow: 1;
     box-sizing: border-box;
     width: 80%;
+    font-family: 'Inria Sans';
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
+#accenture img{
+    width: 10%;
+    height: auto;
+    background-color: blue;
+}
+
+#experience ul li {
+    list-style-type: disc;
+    margin-bottom: 1em;
+
+}
+
+.italic-text{
+    font-style: italic;
+}
+.bold-text{
+    font-weight: bold;
+}
+
+.spacer{
+    height: 3rem;
+}
 /*-------------section 4 (projects)-------------*/
 
 #projects{
