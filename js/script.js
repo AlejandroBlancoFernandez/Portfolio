@@ -1,3 +1,11 @@
+function smoothScroll(targetId) {
+    const target = document.querySelector(targetId);
+    if (target) {
+        target.scrollIntoView({
+            behavior: 'smooth'
+        });
+    }
+}
 function dropdown(button) {
     var content = button.nextElementSibling;
     button.classList.toggle("active");
