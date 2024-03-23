@@ -18,6 +18,22 @@ html{
     /*#2b3a42*/
     /*#282D34*/
 }
+
+#scrollToTopBtn {
+    position: fixed;
+    bottom: 2%;
+    right: 2%;
+    background-color: #6495ED;
+    padding: 0.5%;
+    border-radius: 2em;
+    display: none;
+}
+
+
+#scrollToTopBtn.visible {
+    display: inline-block;
+}
+
 /*-------------SECTIONS-------------*/
 .sections{
     width: 95%; /*occupy almost all width of the screen*/
@@ -66,7 +82,7 @@ html{
 }
 #name{
     font-family: 'Inria Sans';
-    color:#6495ED;;
+    color:#6495ED;
     font-size: 3.5vw;
 }
 
@@ -119,12 +135,10 @@ html{
 #aboutme{
     background-color: #282D34;
     height: auto;
-    display: flex; /*X is main axis for both divs in this section*/
-    
+    display: flex; /*X is main axis for both divs in this section*/ 
 }
 
 #description{
-    border: 2px solid orangered;
     text-align: justify;
     flex: 4; /*grows faster than contact icons*/
 
@@ -144,7 +158,6 @@ html{
 }
 
 #contact{
-    border: 2px solid yellowgreen;
     flex-grow: 1;
     box-sizing: border-box;
     /* for icons to be centered on the right*/
@@ -153,6 +166,14 @@ html{
     justify-content: space-evenly; /*same space in between icons*/
     align-items: center; /*centered in the X axis*/
 }
+
+.contact-icon {
+    transition: transform 0.3s ease;
+  }
+  
+  .contact-icon:hover {
+    transform: scale(1.1);
+  }
 
 
 
