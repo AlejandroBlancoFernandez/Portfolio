@@ -179,6 +179,39 @@ html{
 
 /*-------------section 3 (working experience)-------------*/
 
+
+#we-title{
+    display: flex;
+    align-items: center;    
+}
+
+#download-div{
+    font-size: 1rem;
+    margin-left: 2rem;
+    background-color: #785f8a;
+}
+
+#download-div:hover {
+    background-color: #6495ED; 
+    transform: scale(1.05); 
+    box-shadow: rgba(80, 63, 205, 0.5) 0 1px 30px;
+    transition-duration: 0.1s;
+}
+
+.download-button{
+    display:flex;
+    justify-content: space-around;
+    align-items:center;
+    text-decoration: none;
+}
+
+#download-text{
+    padding-left: 0.4em;
+    font-size: inherit;
+    color:#333333;
+    font-family: 'Inria Sans';
+}
+
 #experience{
     background-color: #282D34;
     height: auto;
@@ -186,7 +219,6 @@ html{
     flex-direction: column; /* Y is the main axis*/
     justify-content: space-evenly;
     align-items: center;
-    border: 2px solid red;
     color:#c4cacf;
 }
 
@@ -216,7 +248,7 @@ html{
 #accenture img{
     width: 10%;
     height: auto;
-    background-color: blue;
+
 }
 
 #experience ul li {
