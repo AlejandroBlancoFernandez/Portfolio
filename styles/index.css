@@ -11,6 +11,7 @@ html{
     align-items: center; /*position regarding the axis is not defined as main*/
     gap: 1.5em; /*space between sections*/
     height: 100%;
+
 }
 
 .bckg{
@@ -188,7 +189,8 @@ html{
 #download-div{
     font-size: 1rem;
     margin-left: 2rem;
-    background-color: #785f8a;
+    background-color: rgb(138,148,228);
+    /*#785f8a;*/
 }
 
 #download-div:hover {
@@ -222,33 +224,56 @@ html{
     color:#c4cacf;
 }
 
-#h2o2{
+#experience p{
+    padding-left: 0.5em;
+}
+
+#experience div:hover{
+    transform: scale(1.04); 
+}
+
+.we-div{
     border-radius: 0.4vw; 
     flex-grow: 1;
     box-sizing: border-box;
-    width: 80%;
+    width: 90%;
     font-family: 'Inria Sans';
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 1);
+    transform: scale(1);
+    transition: transform 1s ease;
 }
+
+
+#h2o2:hover,
+#h2o2:focus {
+  box-shadow: inset 0 0 0 11em #5f9ea0;
+  transition: 1s;
+  /*border: 1em solid #3c40c6;*/
+  color: #f5f6fa;
+}
+
 #h2o2 img{
+    padding-top: 0.5em;
+    padding-left: 0.5em;  
     width: 10%;
     height: auto;
     filter: grayscale(70%)
 }
 
-#accenture{
-    border-radius: 0.4vw; 
-    flex-grow: 1;
-    box-sizing: border-box;
-    width: 80%;
-    font-family: 'Inria Sans';
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-}
 
 #accenture img{
+    padding-top: 0.5em;
+    padding-left: 0.5em;
     width: 10%;
     height: auto;
 
+}
+
+#accenture:hover,
+#accenture:focus {
+  box-shadow: inset 0 0 0 11em #9678ad;
+  transition: 1s;
+  color: #f5f6fa;
 }
 
 #experience ul li {
@@ -267,51 +292,72 @@ html{
 .spacer{
     height: 3rem;
 }
+
+
 /*-------------section 4 (projects)-------------*/
 
 #projects{
-    background-color: grey;
-    height: 80vh;
     display:flex;
     flex-direction: column;
-    
     align-items: center;
 }
 .accordion{
-    border: 2px solid lightblue;
+    width: 75%;
+}
+
+.accordion-item{
+    font-family: 'Inria Sans';
+}
+.accordion-button{
+    padding: 0.5em; 
     width: 100%;
-    margin-top: 1em;
+    background-color: #ddd;
+    display:flex;
+    justify-content: space-between;
+    cursor: pointer;
+    font-family: 'Inria Sans';
+    font-size: 1.1em; 
+}
+
+.accordion-button:hover, .accordion-button.active{
+    background-color: #6495ED;
 }
 
 .accordion-content{
-    border: 2px solid red;
-    padding-bottom: 1em;
-}
-
-.accordion-button, .project-button{
-    padding: 0.5em; /* basic styling*/
-    width: 100%;
-    text-align: left;
-    border: 2px solid black;
-    cursor: pointer;
-}
-
-.accordion-button{
-    background-color: #5f8f78;
-    margin-bottom: 0.5em;
-}
-
-.project-button{
-    background-color: #d8f9ea;
-}
-
-.accordion-sub-item, .accordion-content{
-    max-height: 0; /*maximum height of div content to 0, so it will overflow effectively and...*/
-    overflow: hidden; /*it will be hidden*/
-    transition: max-height 0.3s ease; /*smooth transition used when toggling*/
-
-}
-
-.accordion-button:hover, .project-button:hover {
+    padding-left: 1.5em;
+    color:#000000;
     background-color: #ddd;
+    transition: max-height 0.3s ease;
+    max-height: 0;
+    overflow: hidden; 
+}
+
+.accordion-item.active .accordion-content {
+    max-height: 100%; /* Expand max-height when accordion is active */
+}
+
+.arrow {
+    width: 1.5em; 
+    height: 1.5em; 
+    transition: transform 0.3s ease; /* Smooth rotation transition */
+}
+
+.accordion-button.active .arrow {
+    transform: rotate(180deg); /* Rotate the arrow 180 degrees */
+}
+
+.src-btn{
+    text-decoration: none;
+    padding: 0.45rem; /* Relative padding */
+    border-radius: 0.2rem;
+    background-color: #778899; 
+    color: #ddd;
+    cursor: pointer;
+    outline: none;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+.src-btn:hover {
+    background-color: #6C7B8B;
+    transform: scale(1.05);
 }

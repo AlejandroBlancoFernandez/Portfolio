@@ -66,10 +66,11 @@
             </div>
         </div>
         <section class="sections" id="experience">
-            <div id="h2o2">
+            <div class ="we-div" id="h2o2">
                 <img src="./logos/Logo.jfif" alt="H2O2">
                 <p class="italic-text">October, 2023 - Now</p>
-                <p>In H202, Aplicaciones Sanitarias, I have had my first contact with data in real world scenarios. The information reports</p>
+                <p>In H202, Aplicaciones Sanitarias, I have had my first contact with data in real world scenarios.
+                    The information reports produced from Decon-X machines when a disinfection was carried out were the main source of data.</p>
                 <p class="bold-text">Key responsibilities:</p>
                 <ul class="responsibilities">
                     <li>Responsibility 1</li>
@@ -78,10 +79,10 @@
                 </ul>
             </div>
             <div class="spacer"></div>
-            <div id="accenture">
+            <div class="we-div" id="accenture">
                 <img src="./logos/Accenture-logo.png" alt="Accenture">
                 <p class="italic-text">June, 2022 - August, 2022</p>
-                <p>During my short period in Technology Consulting, I have had the opportunity to immerse</p>
+                <p>During my short period in Technology Consulting, I have had the opportunity to immerse myself in the world of Cloud Computing.</p>
                 <p class="bold-text">Key responsibilities:</p>
                 <ul class="responsibilities">
                     <li>Responsibility 1</li>
@@ -96,17 +97,23 @@
             <!--Double dropdown accordion menu-->
             <div class="accordion">
                 <div class="accordion-item">
-                    <button class="accordion-button" onclick="dropdown(this)">Project 1</button>
-                    <div class="accordion-content">
+                    <button class="accordion-button" onclick="dropdown(this); smoothScroll('#exoplanets')">An Exploratory Data Analysis about Exoplanets
+                        <img src="./icons/expand_more.png" class="arrow" alt="Expand more arrow">
+                    </button>
+                    <div id="exoplanets" class="accordion-content">
                       <p>Description of Project 1.</p>
-                      <a href="https://github.com/project1">GitHub Repo</a>
+                      <a href="https://github.com/AlejandroBlancoFernandez/ExoplanetEDA" target="_blank" class="src-btn">Source code</a>
+                      <p></p>
                     </div>
                 </div>
                 <div class="accordion-item">
-                    <button class="accordion-button" onclick="dropdown(this)">Project 2</button>
-                    <div class="accordion-content">
+                    <button class="accordion-button" onclick="dropdown(this); smoothScroll('#exoplanets')">Project 2
+                        <img src="./icons/expand_more.png" class="arrow" alt="Expand more arrow">                    
+                    </button>
+                    <div id="project2" class="accordion-content">
                       <p>Description of Project 2.</p>
-                      <a href="https://github.com/project2">GitHub Repo</a>
+                      <a href="https://github.com/project2"class="src-btn">Source code</a>
+                      <p></p>
                     </div>
                 </div>
 

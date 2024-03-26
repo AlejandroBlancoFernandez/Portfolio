@@ -1,3 +1,4 @@
+// Drop-down divs for the projects
 function smoothScroll(targetId) {
     const target = document.querySelector(targetId);
     if (target) {
@@ -8,14 +9,17 @@ function smoothScroll(targetId) {
 }
 function dropdown(button) {
     var content = button.nextElementSibling;
+    var accordionItem = button.parentElement;
+    accordionItem.classList.toggle("active");
     button.classList.toggle("active");
     if (content.style.maxHeight) {
         content.style.maxHeight = null;
     } else {
-        content.style.maxHeight = "100%"; 
+        content.style.maxHeight = (content.scrollHeight / parseFloat(getComputedStyle(document.documentElement).fontSize)) + "em";
     }
 }
 
+// Blue button to scroll to the top
 const scrollToTopBtn = document.getElementById('scrollToTopBtn');
 
 window.addEventListener('scroll', () => {
