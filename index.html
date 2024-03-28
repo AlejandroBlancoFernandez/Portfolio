@@ -4,6 +4,7 @@
     <head>
         <meta charset="utf-8">
         <link rel="stylesheet" href="styles/index.css">
+        <link rel="icon" href="images/me.PNG" type="image/x-icon">
         <title>Alejandro's Portfolio</title>
     </head>
 
@@ -18,7 +19,7 @@
                     </h1>
                     <p>Last year Computer Science & Business Management student at UC3M</p>
                 </div>
-                <img src="images/Captura2.PNG" alt="Me" id="photoMe">
+                <img src="images/me.PNG" alt="Me" id="photoMe">
             </div>
             <div id="button-frame">
                 <a href="#about-me-title" class="btn">About me</a>
@@ -33,7 +34,7 @@
                     <span class="keywords">&lt;Hello, World!&gt;</span> Welcome to my portfolio!
                 </p>        
                 <p>
-                    With the growing significance of automation and efficiency in the era of data, the call for individuals who can harness the power of information has never been more insistent. In today’s fast-paced world, where data is ubiquitous, I am attracted to the endless possibilities these fields offer.
+                    In today's data-driven world, I'm drawn to the opportunities presented by the increasing need for individuals skilled in automation and efficiency.
                 </p>          
                 <p>
                     That is why I have developed interest in the fields of 
@@ -52,15 +53,15 @@
                 <a href="https://mail.google.com/mail/?view=cm&fs=1&tf=1&to=alejandroblanco020@gmail.com" target="_blank" class="contact-icon"><img src="./icons/gmail.png" alt="Gmail">
                 </a>
                 
-                <a href="https://github.com/AlejandroBlancoFernandez" target="_blank" class="contact-icon"><img src="./icons/github.png" alt="My GitHub profile">
+                <a href="https://github.com/AlejandroBlancoFernandez" target="_blank" class="contact-icon" id="github"><img src="./icons/github.png" alt="My GitHub profile">
                 </a>
                 
             </div>
         </section>
         <div class="title" id="we-title">Working experience
             <div class="btn" id="download-div">
-                <a href="./assets/prueba.pdf" download class="download-button">
-                    <img src="./icons/download.png" alt="Download Icon"></img>
+                <a href="./assets/prueba.pdf" download id="download-button">
+                    <img src="./icons/download.png" id="icon-download" alt="Download Icon"></img>
                     <span id="download-text">Download CV</span>
                 </a>
             </div>
@@ -69,30 +70,48 @@
             <div class ="we-div" id="h2o2">
                 <img src="./logos/Logo.jfif" alt="H2O2">
                 <p class="italic-text">October, 2023 - Now</p>
-                <p>In H202, Aplicaciones Sanitarias, I have had my first contact with data in real world scenarios.
-                    The information reports produced from Decon-X machines when a disinfection was carried out were the main source of data.</p>
+                <p>In H202, Aplicaciones Sanitarias, I have performed a variety of tasks, including my first contact with data in real world scenarios.</p>
                 <p class="bold-text">Key responsibilities:</p>
                 <ul class="responsibilities">
-                    <li>Responsibility 1</li>
-                    <li>Responsibility 2</li>
-                    <li>Responsibility 3</li>
+                    <li>
+                        <b>Data gathering and cleaning:</b>
+                        I used Python and Pandas to extract and clean raw data from disinfection reports produced by Decon-X machines whenever a disinfection was carried out.
+                    </li>
+                    <li>
+                        <b>Data visualization:</b>
+                        After data preparation, I would make use of PowerBI to create dashboards to shed light on important performance metrics (e.g.
+                        the total number of disinfections made, the total volume disinfected per machine or the number of disinfections per type).
+                    </li>
+                    <li>
+                        <b>Business assistant:</b>
+                        Aside from working with data, I have also been in the administrative side of the business, with tasks that included billing processes, reaching out to potentially new clients and
+                        training professionals on how to use disinfection machines.
+                    </li>
+                    
                 </ul>
             </div>
             <div class="spacer"></div>
             <div class="we-div" id="accenture">
                 <img src="./logos/Accenture-logo.png" alt="Accenture">
                 <p class="italic-text">June, 2022 - August, 2022</p>
-                <p>During my short period in Technology Consulting, I have had the opportunity to immerse myself in the world of Cloud Computing.</p>
+                <p>During my short period in Technology Consulting, I had the opportunity to immerse myself in the world of Cloud Computing.</p>
                 <p class="bold-text">Key responsibilities:</p>
                 <ul class="responsibilities">
-                    <li>Responsibility 1</li>
-                    <li>Responsibility 2</li>
-                    <li>Responsibility 3</li>
+                    <li>
+                        <b>Network maintenance:</b>
+                        Using GlobalProtect, GestioIP and AWS, I was in charge of managing the network infrastrcture and ensuring connectivity between
+                        on-premises and cloud resources during the UOC migration. The tasks were assigned in groups with Jira software.
+                    </li>
+                    <li>
+                        <b>Course completion:</b>
+                        I completed training courses that set the foundation for daily activities.
+                    </li>
                 </ul>
             </div>
             <div class="spacer"></div>
         </section>
         <div class="title" id="projects-title">Projects</div>
+        <div class="subtitle">A glimpse of the latest projects I have been working on...</div>
         <section class="sections" id="projects">
             <!--Double dropdown accordion menu-->
             <div class="accordion">
@@ -101,7 +120,9 @@
                         <img src="./icons/expand_more.png" class="arrow" alt="Expand more arrow">
                     </button>
                     <div id="exoplanets" class="accordion-content">
-                      <p>Description of Project 1.</p>
+                      <p>Just like discovering planets beyond our Solar System involves labor-intensive work, in this project I delve into NASA's Exoplanet public data
+                        and use it to gain valuable insights about these astronomical objects.
+                      </p>
                       <a href="https://github.com/AlejandroBlancoFernandez/ExoplanetEDA" target="_blank" class="src-btn">Source code</a>
                       <p></p>
                     </div>
@@ -120,6 +141,17 @@
                 
             </div>
         </section>
+
+        <div class="title" id="further-edu">Further education (online courses)</div>
+        <div class="subtitle">Certificates of completion from the following courses</div>
+        <section class="sections" id="online-courses">
+
+
+
+            
+        </section>
+
+
 
         <script src="js/script.js"></script>
     </body>
