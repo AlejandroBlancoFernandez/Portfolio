@@ -358,7 +358,8 @@ body {
     cursor: pointer;
     font-family: 'Inria Sans';
     font-size: 1.1em;
-    border-radius: 0.4vw; 
+    border-radius: 0.4vw;
+    font-weight: bold; 
 }
 
 .accordion-button:hover, .accordion-button.active{
@@ -404,5 +405,81 @@ body {
     transform: scale(1.05);
 }
 
+#exoplanets {
+    background-image: url('../images/stars.jpg');
+    background-size: cover; 
+    background-position: center;
+    color: #ddd;
+}
 /*-------------section 5 (courses)-------------*/
 
+.completion-certificates {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+  
+.certificate {
+    position:relative;
+    width: 45%;
+    margin: 1rem; 
+    text-align: center;
+    color: #ddd;
+    font-size: 1rem; 
+    padding: 0.5em;
+    font-style: italic;
+    background-size: cover;
+    transition: transform 0.3s;
+}
+
+  
+.certificate p {
+    opacity: 1;
+    margin-top: 1rem;
+    transition: opacity 0.3s;
+    z-index:-1;
+}
+.certificate:hover {
+    transform: scale(1.05);
+
+  }
+
+.background-color {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.85);
+    z-index: 0;
+}
+
+.background-color:hover {
+    background-color: rgba(0, 0, 0, 0.1); /* Background color */
+}
+
+#certificate1 {
+    background-image: url('../images/certificate1.png');
+    background-position: center;
+}
+  
+#certificate2 {
+    background-position: center;
+    background-image: url('../images/certificate2.png');
+}
+
+#certificate3 {
+    background-image: url('../images/certificate3.png');
+    background-position: center 41%;
+}
+  
+#certificate4 {
+    background-image: url('../images/certificate4.png');
+    background-position: center 56%;
+}
+#certificate5 {
+    background-image: url('../images/certificate5.png');
+    background-position: center 41%;
+}
+  
