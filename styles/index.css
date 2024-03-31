@@ -452,26 +452,26 @@ body {
   }
 
 #certificate1 {
-    background-image: url('../images/certificate1.png');
+    background-image: url('../images/certificate1.PNG');
     background-position: center;
 }
   
 #certificate2 {
     background-position: center;
-    background-image: url('../images/certificate2.png');
+    background-image: url('../images/certificate2.PNG');
 }
 
 #certificate3 {
-    background-image: url('../images/certificate3.png');
+    background-image: url('../images/certificate3.PNG');
     background-position: center 41.5%;
 }
   
 #certificate4 {
-    background-image: url('../images/certificate4.png');
+    background-image: url('../images/certificate4.PNG');
     background-position: center 56%;
 }
 #certificate5 {
-    background-image: url('../images/certificate5.png');
+    background-image: url('../images/certificate5.PNG');
     background-position: center 41.5%;
 }
 
