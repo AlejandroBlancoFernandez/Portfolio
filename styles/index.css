@@ -1,4 +1,7 @@
-
+:root {
+    --background-overlay: rgb(0, 0, 0, 0.7);
+    --badges-text-color: #ddd;
+  }
 html{
     scroll-behavior: smooth;
 }
@@ -36,7 +39,6 @@ body {
 }
 
 .bckg{
-    /*background: linear-gradient(0deg, rgb(9, 24, 40) 5%, rgb(16, 37, 60) 51.2%, rgb(8, 19, 30) 100%);*/
     background: linear-gradient(0deg, rgb(9, 24, 40) 11.2%, rgb(8, 19, 30) 51.2%, rgb(16, 37, 60) 100%);
 
     /*background-color: #1F2833;*/
@@ -73,7 +75,6 @@ body {
     margin-bottom: 0.25em;
     margin-left: 2em;
     padding-top: 0.5em;
-    /*border: 2px solid #F7F9F9;*/
     color: #c4c4cf;
     font-size: 2em;
     font-family: 'Georgia', 'Gill Sans MT', sans-serif;
@@ -104,7 +105,6 @@ body {
     display: flex; /*X axis is main*/
     justify-content: space-evenly;
     align-items: center;
-    /*border: 2px solid orangered;*/
 }
 
 #initial-text{
@@ -142,7 +142,6 @@ body {
     display: flex; /* flexbox inside the button div*/
     justify-content: space-evenly; /* evenly spaced buttons*/
     align-items: center; /*centered in the Y axis*/
-    /*border: 2px solid yellowgreen;*/
 }
 
 .btn{
@@ -167,7 +166,6 @@ body {
 /*-------------section 2 (about me)-------------*/
 
 #aboutme{
-    /*background-color: #1F2833;*/
     height: auto;
     display: flex; /*X is main axis for both divs in this section*/ 
 }
@@ -175,7 +173,6 @@ body {
 #description{
     text-align: justify;
     flex: 4; /*grows faster than contact icons*/
-
     box-sizing: border-box;/* div fitting within the section height*/
     padding: 0.75em;
     color:#c4cacf;
@@ -255,7 +252,6 @@ body {
 }
 
 #experience{
-    /*background-color: #1F2833;*/
     height: auto;
     display: flex; 
     flex-direction: column; /* Y is the main axis*/
@@ -288,7 +284,6 @@ body {
 #h2o2:focus {
   box-shadow: inset 0 0 0 12em #5f9ea0;
   transition: 1s;
-  /*border: 1em solid #3c40c6;*/
   color: #f5f6fa;
 }
 
@@ -307,7 +302,6 @@ body {
     width: 10%;
     height: auto;
     filter:brightness(120%);
-
 }
 
 #accenture:hover,
@@ -320,12 +314,12 @@ body {
 #experience ul li {
     list-style-type: disc;
     margin-bottom: 1em;
-
 }
 
 .italic-text{
     font-style: italic;
 }
+
 .bold-text{
     font-weight: bold;
 }
@@ -391,7 +385,7 @@ body {
 
 .src-btn{
     text-decoration: none;
-    padding: 0.45rem; /* Relative padding */
+    padding: 0.45rem;
     border-radius: 0.2rem;
     background-color: #778899; 
     color: #ddd;
@@ -413,51 +407,49 @@ body {
 }
 /*-------------section 5 (courses)-------------*/
 
+
+#online-courses{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+}
+
 .completion-certificates {
     display: flex;
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
+    gap: 1em;
 }
   
 .certificate {
-    position:relative;
     width: 45%;
-    margin: 1rem; 
-    text-align: center;
-    color: #ddd;
-    font-size: 1rem; 
-    padding: 0.5em;
-    font-style: italic;
     background-size: cover;
     transition: transform 0.3s;
+    border-radius: 0.4vw;
 }
 
-  
-.certificate p {
-    opacity: 1;
-    margin-top: 1rem;
-    transition: opacity 0.3s;
-    z-index:-1;
-}
-.certificate:hover {
-    transform: scale(1.05);
-
-  }
-
-.background-color {
-    position: absolute;
+.overlay-badges {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(0, 0, 0, 0.85);
-    z-index: 0;
+    background-color: var(--background-overlay);
 }
 
-.background-color:hover {
-    background-color: rgba(0, 0, 0, 0.1); /* Background color */
+.overlay-badges p {
+    color: var(--badges-text-color);
+    font-size: 1rem; 
 }
+
+.certificate:hover {
+    transform: scale(1.05);
+    --background-overlay: rgba(29, 9, 9, 0.1);
+    --badges-text-color: transparent;
+  }
 
 #certificate1 {
     background-image: url('../images/certificate1.png');
@@ -471,7 +463,7 @@ body {
 
 #certificate3 {
     background-image: url('../images/certificate3.png');
-    background-position: center 41%;
+    background-position: center 41.5%;
 }
   
 #certificate4 {
@@ -480,6 +472,9 @@ body {
 }
 #certificate5 {
     background-image: url('../images/certificate5.png');
-    background-position: center 41%;
+    background-position: center 41.5%;
 }
-  
+
+.institution{
+    font-style: italic;
+}
