@@ -404,14 +404,17 @@ body {
     background-size: cover; 
     background-position: center;
     color: #ddd;
+    text-shadow: 0.2em 0.2em 0.4em rgba(221, 221, 221, 0.5);
 }
 
 #covid-dashboard {
     background-image: url('../images/CovidDashboard.png');
     background-size: cover; 
     background-position: center;
-    color: #000000;
+    color: black;
+    text-shadow: 0.2em 0.2em 0.4em rgba(0, 0, 0, 0.5);
 }
+
 /*-------------section 5 (courses)-------------*/
 
 
