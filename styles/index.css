@@ -362,6 +362,7 @@ body {
 
 .accordion-content{
     padding-left: 1.5em;
+    padding-right: 1em;
     color:#000000;
     background-color: rgb(200, 200, 200);
     transition: max-height 0.3s ease;
@@ -415,6 +416,24 @@ body {
     text-shadow: 0.2em 0.2em 0.4em rgba(0, 0, 0, 0.5);
 }
 
+#a-estrella{
+    background-image: url('../images/Astar.png');
+    background-size: cover; 
+    background-position: center;
+}
+
+#aprendizajeUC3M{
+    background-image: url('../images/ml_models.jpg');
+    background-size: cover; 
+    background-position: center;
+}
+.resaltado{
+    background-color: rgba(29, 9, 9, 0.6);
+    color: #ddd;
+    text-shadow: 0.2em 0.2em 0.4em rgba(221, 221, 221, 0.5);    
+    border-radius: 0.2rem;
+
+}
 /*-------------section 5 (courses)-------------*/
 
 
