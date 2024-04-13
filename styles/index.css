@@ -409,7 +409,7 @@ body {
 }
 
 #covid-dashboard {
-    background-image: url('../images/CovidDashboard.png');
+    background-image: url('../images/CovidDashboard.jpg');
     background-size: cover; 
     background-position: center;
     color: black;
@@ -417,7 +417,7 @@ body {
 }
 
 #a-estrella{
-    background-image: url('../images/Astar.png');
+    background-image: url('../images/Astar.jpg');
     background-size: cover; 
     background-position: center;
 }
